@@ -2,11 +2,11 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
 }
 
 h1{
-    color: #000000;
+    color: #2c3e50;
     text-align: center;
     margin-top: 20px;
 }
@@ -15,29 +15,84 @@ p{
     font-size: 16px;
     line-height: 1.6;
     margin: 20px;
-    color: #00e1ff;
+    color: #34495e;
 }
 
 #encabezado{
-    background-color: #4CAF50;
-    color: white;
-    min-height: 200px;
+    background-color: #3498db;
+    min-height: 130px;
     height: auto;
-    width: 50%;
+    width: 100%;
     margin: auto;
-    padding: 20px;
-    box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.3);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-#encabezado h1{
-   color: #000000;
 
+.logo{
+    width: 10%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px ;
 }
-#encabezado .primero{
-    color: blueviolet;
+.logo img{
+    width: 80%;
+    height: 80%;
 }
-#encabezado .segundo{
-    color: rgb(226, 43, 43);
+
+.menu{
+    background-color: #e74c3c;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 5px;
 }
-#encabezado .tercero{
-    color: rgb(43, 101, 226);
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #e74c3c;
+    display: flex;
+    gap: 15px;
+}
+.menu ul li{
+    float: left;
+}
+
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    align-items: center;
+}
+
+.menu ul li a:hover{
+    background-color: #c0392b;
+    color: tomato;
+    border-radius: 4px;
+}
+
+
+.redes{
+    background-color: #9b59b6;
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
 }
