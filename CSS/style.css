@@ -19,7 +19,7 @@ p{
 }
 
 #encabezado{
-    background-color: #3498db;
+    background-color: #3B82F6;
     min-height: 130px;
     height: auto;
     width: 100%;
@@ -46,7 +46,7 @@ p{
 }
 
 .menu{
-    background-color: #e74c3c;
+    background-color: #34D399;
     width: 50%;
     height: auto;
     display: flex;
@@ -61,7 +61,7 @@ p{
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #e74c3c;
+    background-color: #34D399;
     display: flex;
     gap: 15px;
 }
@@ -79,14 +79,14 @@ p{
 }
 
 .menu ul li a:hover{
-    background-color: #c0392b;
-    color: tomato;
+    background-color: #F1F5F9;
+    color: rgb(71, 166, 255);
     border-radius: 4px;
 }
 
 
 .redes{
-    background-color: #9b59b6;
+    background-color: #ffff;
     width: 20%;
     height: auto;
     display: flex;
@@ -97,6 +97,100 @@ p{
     border-radius: 5px;
 }
 .redes img{
-    width: 50px;
+    width: 50px ;
     height: 50px;
 }   
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 40px auto; 
+    background-color: #3B82F6;
+    padding: 20px;
+    width: 80%;
+}
+.cards .card1{
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    max-width: 30%;
+    max-height: 80%;
+    }
+
+.cards .card1 img{
+    width: 200px;
+    height: 100px;  
+}
+.cards .card2{
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    max-width: 30%;
+    max-height: 80%;
+    }
+
+.cards .card2 img{
+    width: 200px;
+    height: 100px;  
+}
+
+.cards .card3{
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    max-width: 30%;
+    max-height: 80%;
+    }
+
+.cards .card3 img{
+    width: 200px;
+    height: 100px;    
+}
+.cards .card4{
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    max-width: 30%;
+    max-height: 80%;
+    }
+
+.cards .card4 img{
+    width: 200px;
+    height: 100px;    
+}
+.fondo {
+    background-image: url('/images/fondo.webp');
+    text-align: center;
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1050px;
+    height: 750px;
+    margin: 40px auto; 
+
+}
+
+footer {
+    background-color: #3B82F6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

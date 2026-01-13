@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenudo al sitio web</title>
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
+
 <body>
-    
+
     <div id="encabezado">
         <div class="logo"><img src="/images/logo.png"> </div>
         <div class="menu">
-<ul>
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Lesiones</a></li>
-    <li><a href="#">Autocuidado</a></li>
-    <li><a href="#">Deporte</a></li>
-    <li><a href="#">Mujer</a></li>
-    <li><a href="#">Niños</a></li>
-    <li><a href="#">Clinicas</a></li>
-</ul>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Lesiones</a></li>
+                <li><a href="#">Autocuidado</a></li>
+                <li><a href="#">Deporte</a></li>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Niños</a></li>
+                <li><a href="#">Clinicas</a></li>
+            </ul>
 
         </div>
-        <div class="redes"> 
+        <div class="redes">
             <img src="/images/feibu.png">
             <img src="/images/ig.png">
             <img src="/images/x.webp">
@@ -30,16 +32,62 @@
 
         </div>
     </div>
-    
-        <h2 class="primero">Clinica de Fisioterapia</h2>
-        <h2 class="segundo">Rehabilitacion</h2>
-        <h2 class="tercero">Servicios</h2>
-<p>
-    ¡Bienvenudo a mi sitio web! Aquí encontrarás información interesante sobre diversos temas. Navega por las secciones para descubrir más.
-</p>
-<button onclick="mostrarAlerta()">Haz clic aquí para una sorpresa</button>
+
+    <div class="cards">
+
+        <div class="card1">
+            <img src="/images/lesion.webp" alt="Card 1">
+            <h3>Lesiones Comunes</h3>
+            <p>Información sobre las lesiones más comunes y cómo tratarlas.</p>
+        </div>
+        <div class="card2">
+            <img src="/images/autocuidado.jpg" alt="Card 2">
+            <h3>Autocuidado</h3>
+            <p>Consejos y técnicas para el autocuidado físico y mental.</p>
+        </div>
+        <div class="card3">
+            <img src="/images/deporte.jpg" alt="Card 3">
+            <h3>Deporte y Ejercicio</h3>
+            <p>Guías para mantenerse activo y saludable a través del deporte.</p>
+        </div>
+        <div class="card4">
+            <img src="/images/comida.png" alt="Card 4">
+            <h3>Alimentacion</h3>
+            <p>Información específica sobre la alimentación saludable.</p>
+        </div>
+
+    </div>
+    <div class="fondo">
+
+        <div class="texto">
+            <h2>Tu Salud, Nuestra Prioridad</h2>
+            <h3>¿Qué hace un fisioterapeuta?</h3>
+            <p>
+                Evalúa la condición física y el movimiento del paciente.
+                Diseña un plan de tratamiento personalizado.
+                Aplica técnicas manuales, ejercicios y agentes físicos.
+                Educa al paciente para el autocuidado y la prevención.</p>
+            <h3>Técnicas comunes:</h3>
+            <p>
+                Ejercicio terapéutico: Estiramientos, fortalecimiento, equilibrio.
+                Terapia manual: Masajes, movilizaciones articulares.
+                Agentes físicos: Calor (termoterapia), frío (crioterapia), ultrasonido, electroestimulación.
+            <h3>¿Cuándo es útil?</h3>
+
+            <p>Lesiones deportivas, dolor de espalda, problemas de rodilla, muñeca.
+                Recuperación post-cirugía.
+                Condiciones neurológicas (como secuelas de COVID-19, Parkinson).
+                Mejora del desarrollo motor en niños.
+                Manejo de enfermedades crónicas como la artritis.</p>
+        </div>
+
+    </div>
+
+    <button onclick="mostrarAlerta()">Haz clic aquí para una sorpresa</button>
 
     <script src="/JS/function.js"></script>
-    
+
 </body>
+<footer> <p>© 2023 Clinica de Fisioterapia. Todos los derechos reservados.</p></footer>
+
 </html>
