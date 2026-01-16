@@ -14,13 +14,14 @@
         <div class="logo"><img src="/images/logo.png"> </div>
         <div class="menu">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Lesiones</a></li>
-                <li><a href="#">Autocuidado</a></li>
+                <li><a href="#" onclick="mostrarAlerta()">Inicio</a></li>
+                <li><a href="#" onclick="suma()">Lesiones</a></li>
+                <li><a href="#" onclick="suma(2,7)">Autocuidado</a></li>
                 <li><a href="#">Deporte</a></li>
                 <li><a href="#">Mujer</a></li>
                 <li><a href="#">Niños</a></li>
                 <li><a href="#">Clinicas</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
             </ul>
 
         </div>
@@ -81,13 +82,18 @@
                 Manejo de enfermedades crónicas como la artritis.</p>
         </div>
 
-    </div>
+        Valor1:<input type="number" id="valor1" name="valor1"></input><br>
+        Valor2:<input type="number" id="valor2" name="valor2"></input><br>
+        <button onclick="sumarInputValues()">Calcular</button>
+        Mensaje: <input type="text" id="mensaje" name="mensaje"></input><br>
+
+    </div>  
 
     <button onclick="mostrarAlerta()">Haz clic aquí para una sorpresa</button>
 
     <script src="/JS/function.js"></script>
 
 </body>
-<footer> <p>© 2023 Clinica de Fisioterapia. Todos los derechos reservados.</p></footer>
+<footer> <p>© 2026 Clinica de Fisioterapia. Todos los derechos reservados.</p></footer>
 
 </html>

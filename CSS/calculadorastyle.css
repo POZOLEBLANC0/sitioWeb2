@@ -1,0 +1,123 @@
+:root {
+    /* Paleta Mercury - Imagine Dragons */
+    --mercury-gold: #D4AF37;       /* Dorado metálico */
+    --mercury-dark: #1A1A1A;       /* Negro mate fondo */
+    --mercury-panel: #252525;      /* Gris oscuro panel */
+    --mercury-light: #F4F4F4;      /* Blanco hueso */
+    --mercury-red: #8a1c1c;        /* Rojo intenso (Act 2) */
+    --shadow-glow: 0 0 15px rgba(212, 175, 55, 0.3); /* Resplandor dorado */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna */
+    margin: 0;
+    padding: 0;
+    background-color: var(--mercury-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    width: 320px;
+    background-color: var(--mercury-panel);
+    border: 2px solid var(--mercury-gold);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: var(--shadow-glow), 0 10px 30px rgba(0,0,0,0.5);
+    
+    /* Magia del Grid para acomodar botones */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 12px;
+}
+
+/* Pantalla de la calculadora */
+.pantalla {
+    grid-column: span 4; /* Ocupa todo el ancho */
+    background-color: #000;
+    color: var(--mercury-gold);
+    border: 1px solid #444;
+    border-radius: 10px;
+    height: 60px;
+    font-size: 28px;
+    text-align: right;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    outline: none;
+    font-family: monospace;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+}
+
+/* Estilo general de los botones */
+.boton {
+    background-color: #333;
+    color: var(--mercury-light);
+    border: 1px solid #444;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    height: 60px; /* Altura fija para que sean cuadrados */
+    transition: all 0.3s ease;
+    
+    /* Centrar texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Quitamos padding innecesario */
+}
+
+/* Eliminamos margen del párrafo interno si decides dejar la etiqueta <p> */
+.boton p {
+    margin: 0;
+    pointer-events: none; /* Evita que el click en el texto falle */
+}
+
+/* Hover: Efecto al pasar el mouse */
+.boton:hover {
+    background-color: var(--mercury-gold);
+    color: var(--mercury-dark);
+    transform: translateY(-2px); /* Se levanta un poco */
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+    border-color: var(--mercury-gold);
+}
+
+/* Active: Efecto al hacer click */
+.boton:active {
+    transform: scale(0.95);
+}
+
+/* Botones de operaciones (+, -, *, /) */
+.operador {
+    color: var(--mercury-gold);
+    border-color: var(--mercury-gold);
+}
+
+/* Botón Igual (=) */
+.igual {
+    background-color: var(--mercury-gold);
+    color: var(--mercury-dark);
+    grid-column: span 2; /* Ocupa 2 espacios */
+    font-weight: 900;
+}
+
+.igual:hover {
+    background-color: #fff; /* Brilla blanco al hover */
+    box-shadow: 0 0 20px #fff;
+}
+
+/* Botón Limpiar (C) */
+.limpiar {
+    background-color: var(--mercury-red);
+    color: white;
+    grid-column: span 4; /* Botón grande abajo */
+    border: none;
+    margin-top: 10px;
+}
+
+.limpiar:hover {
+    background-color: #ff4d4d;
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+}
